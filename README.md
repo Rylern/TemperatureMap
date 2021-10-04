@@ -132,16 +132,16 @@ const n = 10;
             })
         }
     }
-	// Create the URLs
-	const baseUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&lat=";
+    // Create the URLs
+    const baseUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&lat=";
     const apiKey = 'your_weather_api_key';
     const urls = points.map(point => baseUrl + point.lat + "&lon=" + point.lng + "&appid=" + apiKey);
-	// Fetch the weather data
+    // Fetch the weather data
     const weathers = await Promise.all(urls.map(async url => {
         const response = await fetch(url);
         return response.text();
     }));
-	// Set the temperature
+    // Set the temperature
     points.forEach((point, index) => {
         point.val = JSON.parse(weathers[index]).main.temp;
     })
@@ -157,7 +157,7 @@ Three steps are done here:
   ```javascript
   (async() => {
       const response = await fetch(url);
-  	const weather = await response.text();
+      const weather = await response.text();
   })();
   ```
 
