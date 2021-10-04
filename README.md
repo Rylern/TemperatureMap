@@ -193,7 +193,7 @@ I created a way of representing this type of heatmap. The project is available o
 </body>
 ```
 
-You can now call the `interpolateHeatmapLayer()` function to create the layer, and add it to the map. Here the whole script:
+You can now call the `interpolateHeatmapLayer.create()` function to create the layer, and add it to the map. Here the whole script:
 
 ```javascript
 mapboxgl.accessToken = 'your_mapbox_access_token';
