@@ -12,7 +12,7 @@ We will:
 * Fetch temperature data using OpenWeatherMap.
 * Use a custom Mapbox layer to display a color scale of the temperature.
 
-The result is displayed here (LINK WEB GITHUB) and the source code is accessible here (LINK GITHUB THIS PROJECT).
+The result is displayed [here](https://rylern.github.io/TemperatureMap/) and the source code is accessible [here](https://github.com/Rylern/TemperatureMap).
 
 ## 1. Setting up the project
 
@@ -183,7 +183,7 @@ The Mapbox heatmap layer can represent the **density** of points in an area (lik
 
 For our temperature map, we want a heatmap that can define a color to any location by making an **average** of the values of the surroundings points (like on the second picture).
 
-I created a way of representing this type of heatmap. The project is available on GitHub (LINK TO THE GITHUB). Download the `interpolateHeatmapLayer.js` file, place it in your working folder and include it before the `map.js` script:
+I created a way of representing this type of heatmap. The project is available on GitHub [here](https://github.com/Rylern/InterpolateHeatmapLayer). Download the `interpolateHeatmapLayer.js` file, place it in your working folder and include it before the `map.js` script:
 
 ```html
 <body>
@@ -282,4 +282,4 @@ The temperature map is now below the labels.
 
 ## 5. Conclusion
 
-You know now how to create a temperature map with Mapbox and OpenWeatherMap. I wrote this article to provide an example of using the interpolate heatmap layer, but it can be used for visualizing generic geographical data. 
+You know now how to create a temperature map with Mapbox and OpenWeatherMap. I wrote this article to provide an example of using the interpolate heatmap layer, but it can also be used for visualizing generic geographical data. 
