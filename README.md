@@ -255,8 +255,8 @@ Other parameters are:
 
 * `opacity`: a number between 0 and 1 describing the transparency of the color.
 * `minValue`: define the value corresponding to the blue color. When it's not defined, this is the lowest temperature of `points` which is represented by the blue color. There is also `maxValue` for the red color.
-* `framebufferFactor`: number between 0 and 1. In short, if the framebuffer factor is around 0, the computation will be faster but less accurate and the opposite if it's around 1. The default value is 0.3. Take a look at the `readme` file of the GitHub (LINK) project if you want to know what exactly this parameter is.
-* `p`: a factor affecting the computation of the color, from 0 to around 15. A high value makes the color uniform around each point. Once again, take a look at the GitHub (LINK) project if you want to know more.
+* `framebufferFactor`: number between 0 and 1. In short, if the framebuffer factor is around 0, the computation will be faster but less accurate and the opposite if it's around 1. The default value is 0.3. Take a look at the `readme` file of the [GitHub project](https://github.com/Rylern/InterpolateHeatmapLayer) if you want to know what exactly this parameter is.
+* `p`: a factor affecting the computation of the color, from 0 to around 15. A high value makes the color uniform around each point. Once again, take a look at the [GitHub project](https://github.com/Rylern/InterpolateHeatmapLayer) if you want to know more.
 * `roi`: list of coordinates (like `points`) defining the area of interest, aka the area where the temperature map will be present. By default, the entire world is colored.
 * `valueToColor`: function defining the range of color of the temperature map. By default, a low temperature is colored blue, a medium green and a high red.
 
