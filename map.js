@@ -20,7 +20,7 @@ const n = 10;
         }
     }
 
-    const baseUrl = "http://api.openweathermap.org/data/2.5/weather?units=metric&lat=";
+    const baseUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&lat=";
     const apiKey = '385df3d81f3a89c1c99c115735540c6d';
     const urls = points.map(point => baseUrl + point.lat + "&lon=" + point.lng + "&appid=" + apiKey);
 

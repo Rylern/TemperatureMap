@@ -89,7 +89,7 @@ The next step is to collect data on the current weather by the mean of a weather
 
 [OpenWeatherMap](https://openweathermap.org/) is an online service that provides among other things global weather data. To use this API, you will have to create an account and get your [API key](https://home.openweathermap.org/api_keys). The free plan includes 60 calls to the API per minute.
 
-The documentation for getting the current weather data is available [here](https://openweathermap.org/current). In this tutorial, we will fetch the current temperature in degree Celsius by geographic coordinates. Therefore, the URLs will be like: `http://api.openweathermap.org/data/2.5/weather?units=metric&lat=latitude&lon=longitude&appid=apiKey`.
+The documentation for getting the current weather data is available [here](https://openweathermap.org/current). In this tutorial, we will fetch the current temperature in degree Celsius by geographic coordinates. Therefore, the URLs will be like: `https://api.openweathermap.org/data/2.5/weather?units=metric&lat=latitude&lon=longitude&appid=apiKey`.
 
 Since the goal of this tutorial is to create a temperature map, we want to fetch the temperature at different locations that cover the entire globe. In geography, latitude goes from -90° to 90°, and longitude from -180° to 180°. However, Mapbox uses the Web Mercator projection, which projects the poles at infinity, so we cannot see the poles. Therefore, let's define some points going from -80° to 80° for the latitude.
 
@@ -133,7 +133,7 @@ const n = 10;
         }
     }
 	// Create the URLs
-	const baseUrl = "http://api.openweathermap.org/data/2.5/weather?units=metric&lat=";
+	const baseUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&lat=";
     const apiKey = 'your_weather_api_key';
     const urls = points.map(point => baseUrl + point.lat + "&lon=" + point.lng + "&appid=" + apiKey);
 	// Fetch the weather data
@@ -216,7 +216,7 @@ const n = 10;
         }
     }
 
-    const baseUrl = "http://api.openweathermap.org/data/2.5/weather?units=metric&lat=";
+    const baseUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&lat=";
     const apiKey = 'your_weather_api_key';
     const urls = points.map(point => baseUrl + point.lat + "&lon=" + point.lng + "&appid=" + apiKey);
 
