@@ -42,7 +42,7 @@ const n = 10;
     map.on('load', () => {
         const layer = interpolateHeatmapLayer.create({
             points: points,
-            layerID: 'temperature'
+            layerId: 'temperature'
         });
         map.addLayer(layer, 'road-label');
     });
