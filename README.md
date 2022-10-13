@@ -239,7 +239,7 @@ const n = 10;
     map.on('load', () => {
         const layer = interpolateHeatmapLayer.create({
             points: points,				// use our array of points
-            layerID: 'temperature'		// define an ID for the layer
+            layerId: 'temperature'		// define an ID for the layer
         });
         map.addLayer(layer);
     });
@@ -271,7 +271,7 @@ To do this, go to [Mapbox Studio](https://studio.mapbox.com), create a new style
     map.on('load', () => {
         const layer = interpolateHeatmapLayer.create({
             points: points,
-            layerID: 'temperature'
+            layerId: 'temperature'
         });
         map.addLayer(layer, 'road-label');
     });
